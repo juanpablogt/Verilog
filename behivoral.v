@@ -12,4 +12,5 @@ module full_adder_behivoral(
     and a2(w2,a,cin);
     and a3(w3,b,cin);
     or o1(cout,w1,w2,w3);
+    
 endmodule
