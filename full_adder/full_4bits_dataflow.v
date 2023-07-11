@@ -8,5 +8,7 @@ output reg cout;
 
 always @(a,b,cin) {cout,s} = a + b + cin;
 
+
+
 endmodule
 
