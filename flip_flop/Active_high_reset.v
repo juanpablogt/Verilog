@@ -1,8 +1,8 @@
-module dff_Ne_Ar(q,d,clk);
+module dff_Sr(q,d,clk,rst);
     input d,clk,rst;
     output reg q;
 
-    always @(negedge clk or posedge rst)
+    always @(posedge clk )
         if(rst)
             q <= 1'b0;
         else
