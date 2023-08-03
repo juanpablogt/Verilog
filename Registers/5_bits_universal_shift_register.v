@@ -16,5 +16,4 @@ always@(posedge clk)
             default: PO <= PO;
         endcase
     end
-assing SO = (sel == 2'b01) ? PO[4] : PO[0];
 endmodule
