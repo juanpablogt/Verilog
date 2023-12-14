@@ -1,0 +1,63 @@
+$date
+	Wed Dec 13 23:54:39 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module circ_simple $end
+$var wire 1 ! Y $end
+$var wire 1 " X $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % C $end
+$scope module cir1 $end
+$var wire 1 & A $end
+$var wire 1 $ B $end
+$var wire 1 % C $end
+$var wire 1 " X $end
+$var wire 1 ! Y $end
+$var wire 1 ' e $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+z'
+x&
+0%
+0$
+0#
+0"
+z!
+$end
+#10
+x"
+1%
+#20
+0"
+0%
+1$
+#30
+x"
+1%
+#40
+0"
+0%
+0$
+x&
+1#
+#50
+x"
+1%
+#60
+0"
+1&
+0%
+1$
+#70
+x"
+1%
+#80
