@@ -1,9 +1,6 @@
 module circ_simple;
-    reg A;
-    reg B;
-    reg C;
-    wire X;
-    wire Y;
+    reg A,B,C;
+    wire X,Y;
 
     circuito_simple cir1(.A(A), .B(B), .C(C), .X(X), .Y(Y));
 
