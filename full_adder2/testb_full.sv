@@ -2,7 +2,7 @@
         reg a, b, cin;
         wire sum, cout;
     
-        sumador_comp adder3 (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+        sumador_comp adder3 (a, b, cin, sum, cout);
 
     initial begin
         $dumpfile("test_adder.vcd");
