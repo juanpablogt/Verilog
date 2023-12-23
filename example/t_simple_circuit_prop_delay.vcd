@@ -1,0 +1,51 @@
+$date
+	Fri Dec 22 20:35:52 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_simple_circuit_prop_delay $end
+$var wire 1 ! E $end
+$var wire 1 " D $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % C $end
+$scope module uut $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % C $end
+$var wire 1 " D $end
+$var wire 1 ! E $end
+$var wire 1 & w1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x&
+0%
+0$
+0#
+x"
+x!
+$end
+#30
+0&
+#40
+1"
+#50
+0!
+#100
+1%
+1$
+1#
+#120
+1!
+#130
+1&
+#140
+0"
+#200
