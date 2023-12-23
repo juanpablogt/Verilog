@@ -6,14 +6,14 @@ module test_adder;
     initial begin
         $dumpfile("test_adder.vcd");
         $dumpvars(0, test_adder);
-        #10 a=0; b=0; cin=0;
-        #10 a=0; b=0; cin=1;
-        #10 a=0; b=1; cin=0;
-        #10 a=0; b=1; cin=1;
-        #10 a=1; b=0; cin=0;
-        #10 a=1; b=0; cin=1;
-        #10 a=1; b=1; cin=0;
-        #10 a=1; b=1; cin=1;
+        #10 cin = 0; a = 0; b = 0;
+        #10 cin = 0; a = 0; b = 1;
+        #10 cin = 0; a = 1; b = 0;
+        #10 cin = 0; a = 1; b = 1;
+        #10 cin = 1; a = 0; b = 0;
+        #10 cin = 1; a = 0; b = 1;
+        #10 cin = 1; a = 1; b = 0;
+        #10 cin = 1; a = 1; b = 1;
         #10 $finish;
     end
 endmodule
