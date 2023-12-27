@@ -1,5 +1,5 @@
 $date
-	Sat Dec 23 15:07:02 2023
+	Wed Dec 27 15:09:06 2023
 $end
 $version
 	Icarus Verilog
@@ -8,77 +8,149 @@ $timescale
 	1s
 $end
 $scope module test_adder $end
-$var wire 1 ! sum $end
+$var wire 4 ! sum [3:0] $end
 $var wire 1 " cout $end
-$var reg 1 # a $end
-$var reg 1 $ b $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
 $var reg 1 % cin $end
-$scope module adder3 $end
-$var wire 1 # a $end
-$var wire 1 $ b $end
+$scope module adderbinary $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
 $var wire 1 % cin $end
+$var wire 4 ( sum [3:0] $end
+$var wire 4 ) sum_intermedio [3:0] $end
+$var wire 1 * cout_intermedio3 $end
+$var wire 1 + cout_intermedio2 $end
+$var wire 1 , cout_intermedio1 $end
 $var wire 1 " cout $end
-$var wire 1 ! sum $end
-$var wire 1 & s1 $end
-$var wire 1 ' c2 $end
-$var wire 1 ( c1 $end
+$scope module adder0 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 % cin $end
+$var wire 1 , cout $end
+$var wire 1 / sum $end
+$var wire 1 0 s1 $end
+$var wire 1 1 c2 $end
+$var wire 1 2 c1 $end
 $scope module adder1 $end
-$var wire 1 # a $end
-$var wire 1 $ b $end
-$var wire 1 ( carry $end
-$var wire 1 & sum $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 2 carry $end
+$var wire 1 0 sum $end
 $upscope $end
 $scope module adder2 $end
 $var wire 1 % a $end
-$var wire 1 & b $end
-$var wire 1 ' carry $end
-$var wire 1 ! sum $end
+$var wire 1 0 b $end
+$var wire 1 1 carry $end
+$var wire 1 / sum $end
+$upscope $end
+$upscope $end
+$scope module adder1 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 , cin $end
+$var wire 1 + cout $end
+$var wire 1 5 sum $end
+$var wire 1 6 s1 $end
+$var wire 1 7 c2 $end
+$var wire 1 8 c1 $end
+$scope module adder1 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 8 carry $end
+$var wire 1 6 sum $end
+$upscope $end
+$scope module adder2 $end
+$var wire 1 , a $end
+$var wire 1 6 b $end
+$var wire 1 7 carry $end
+$var wire 1 5 sum $end
+$upscope $end
+$upscope $end
+$scope module adder2 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 + cin $end
+$var wire 1 * cout $end
+$var wire 1 ; sum $end
+$var wire 1 < s1 $end
+$var wire 1 = c2 $end
+$var wire 1 > c1 $end
+$scope module adder1 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 > carry $end
+$var wire 1 < sum $end
+$upscope $end
+$scope module adder2 $end
+$var wire 1 + a $end
+$var wire 1 < b $end
+$var wire 1 = carry $end
+$var wire 1 ; sum $end
+$upscope $end
+$upscope $end
+$scope module adder3 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 * cin $end
+$var wire 1 " cout $end
+$var wire 1 A sum $end
+$var wire 1 B s1 $end
+$var wire 1 C c2 $end
+$var wire 1 D c1 $end
+$scope module adder1 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 D carry $end
+$var wire 1 B sum $end
+$upscope $end
+$scope module adder2 $end
+$var wire 1 * a $end
+$var wire 1 B b $end
+$var wire 1 C carry $end
+$var wire 1 A sum $end
+$upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0(
-0'
-0&
+1D
+0C
+0B
+1A
+1@
+1?
+1>
+0=
+0<
+1;
+1:
+19
+18
+07
+06
+15
+14
+13
+12
+01
+00
+0/
+1.
+1-
+1,
+1+
+1*
+b1110 )
+b1110 (
+b1111 '
+b1111 &
 0%
-0$
-0#
-0"
-0!
+b1111 $
+b1111 #
+1"
+b1110 !
 $end
 #10
-1!
-1%
-#20
-1&
-0%
-1$
-#30
-1"
-0!
-1'
-1%
-#40
-0"
-1!
-0'
-0%
-0$
-1#
-#50
-1"
-0!
-1'
-1%
-#60
-0'
-0&
-1(
-0%
-1$
-#70
-1!
-1%
-#80
