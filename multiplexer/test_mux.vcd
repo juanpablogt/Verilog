@@ -1,0 +1,33 @@
+$date
+	Thu Dec 28 17:33:10 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_mux $end
+$var wire 1 ! out $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ s $end
+$scope module mux $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ s $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+1"
+0!
+$end
+#10
+1!
+1$
+#20
