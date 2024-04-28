@@ -1,7 +1,7 @@
 module ProgramCounter(
-    input logic clk,
-    input logic [31:0] AddressIn,
-    output logic [31:0] Address = 0
+    input clk,
+    input [31:0] AddressIn,
+    output [31:0] Address = 0
   );
   
     always@(posedge clk)

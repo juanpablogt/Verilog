@@ -1,7 +1,7 @@
 module ImmGen(
-    input logic signed[31:0] Inst,
-    input logic signed[2:0] ImmSrc,
-    output logic [31:0] ImmExt
+    input signed[31:0] Inst,
+    input signed[2:0] ImmSrc,
+    output [31:0] ImmExt
   );
   always @(*) begin
       case(ImmSrc)

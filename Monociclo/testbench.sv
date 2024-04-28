@@ -1,6 +1,6 @@
 module test;
-  
-    logic CLK = 0;
+
+    reg CLK;
     
     MiRiscV RV(CLK);
     
@@ -8,7 +8,7 @@ module test;
       #5 CLK= ~ CLK;
     end
     
-    initial begin 
+    initial begin
       $dumpfile("dump.vcd");
       $dumpvars(2);
       #420

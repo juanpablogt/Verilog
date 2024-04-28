@@ -1,8 +1,8 @@
 module BranchUnit(
-  input logic signed [31:0] A,
-  input logic signed [31:0] B,
-  input logic [4:0] BrOp,
-  output logic NextPCSrc
+  input  signed [31:0] A,
+  input  signed [31:0] B,
+  input  [4:0] BrOp,
+  output  NextPCSrc
 );
 always @(*) begin
     if (BrOp[4])

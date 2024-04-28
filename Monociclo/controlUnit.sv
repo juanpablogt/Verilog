@@ -1,16 +1,16 @@
 module UnidadDeControl(
-    input logic [6:0] OpCode,
-    input logic [2:0] F3,
-    input logic [6:0] F7,
-    output logic [2:0] ImmSrc,
-    output logic ALUASrc,
-    output logic ALUBSrc,
-    output logic [3:0] ALUOp,
-    output logic DMWr,
-    output logic [2:0] DMCtrl,
-    output logic [1:0] RUDataWrSrc,
-    output logic RUWr,
-    output logic [4:0] BrOp
+    input [6:0] OpCode,
+    input [2:0] F3,
+    input [6:0] F7,
+    output [2:0] ImmSrc,
+    output ALUASrc,
+    output ALUBSrc,
+    output [3:0] ALUOp,
+    output DMWr,
+    output [2:0] DMCtrl,
+    output [1:0] RUDataWrSrc,
+    output RUWr,
+    output [4:0] BrOp
   );
   
   always @(*) begin

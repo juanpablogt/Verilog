@@ -1,13 +1,12 @@
 module MemoriaDeInstrucciones(
-    input logic [31:0]Address,
-    output logic [31:0]Inst
+    input  [31:0]Address,
+    output  [31:0]Inst
   );
-    
-    logic [7:0]INS[(2**8):0];
-    
-    initial begin
-      $readmemb("instructions.txt",INS);
+
+    reg [31:0] INS[0:1023];
+
+    always @(Address) begin
+        Inst = INS[Address];
     end
-    
-    assign Inst = {INS[Address], INS[Address+1], INS[Address+2], INS[Address+3]};
-  endmodule
+
+endmodule

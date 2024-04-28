@@ -1,15 +1,14 @@
-`include "Alu.sv"
-`include "branchUnit.sv"
-`include "controlUnit.sv"
+`include "ALU.sv"
 `include "DataMemory.sv"
-`include "immGenerator.sv"
-`include "instrMemory.sv"
-`include "mux2_1.sv"
-`include "mux3_1.sv"
-`include "PC.sv"
-`include "RegisUnit.sv"
+`include "RegisterUnit.sv"
+`include "ControlUnit.sv"
+`include "BranchUnit.sv"
+`include "InstructionMemory.sv"
+`include "ImmediateGenerator.sv"
+`include "ProgramCounter.sv"
+`include "Mux2a1.sv"
+`include "Mux3a1.sv"
 `include "Sumador.sv"
-
 
 module MiRiscV(
   input logic CLK
@@ -86,7 +85,7 @@ module MiRiscV(
 
   UnidadDeRegistros RegisterUnit(
     CLK,
-    addressRs1, 
+    addressRs1,
     addressRs2,
     addressRd,
     DataWr,
@@ -151,4 +150,5 @@ module MiRiscV(
     ALUres,
     DataWr
   );
+
 endmodule
